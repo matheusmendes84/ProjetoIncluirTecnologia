@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    background-color: #fff;
+  }
+  body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    color: #333;
+    background-color: #fff;
+  }
+  h1 {
+    text-align: center;
+  }
+
+  #cabecalho {
+    background-color: #fff;
+    text-align: left;
+    width: 852px;
+    margin: 30px auto;
+    padding: 0;
+  }
+
+  #cabecalho img{
+    display: float;
+    width: 10%;
+    height: 10%;
+    
+  }
+
+  #main {
+    background-color: #fff;
+    text-align: center;
+    width: 952px;
+    margin: 30px auto;
+    padding: 0;
+  }
+  #seleção{
+    margin-right: 10px;
+    background-color: #fff;
+    
+  }
+  #regiões{
+    margin-right: 20px;
+    width: 30%;  
+  }
+  #países{
+    width: 30%; 
+    margin-right: 20px; 
+  }
+  #flag {
+    width: 100%;
+    height: 552px;
+    background-color: #fff;
+   
+  }
+  #flag img {
+    display: float;
+    width: 20%;
+    height: 20%;
+    background-color: #fff;
+    border: 1px solid #333;
+    margin-top: 10px; 
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 35px;
+  }
+
+  #flagtela2 {
+    position: relative;
+    border-width:1px;
+    width: 30%;
+    height: 222px;
+    left:0px;
+    margin-top: 0px; 
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 35px;
+    float: left;
+    background-color: #fff;
+  }
+
+  #flagtela2 img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid #333;
+  }
+
+  #info {
+    text-align: left;
+    position:relative;
+    border-width:2px;
+    width:50%;
+    height: 100%;
+    float: left;
+    margin: 10px auto;
+    padding: 5px;
+    min-width: 10%;
+    color: #333;
+    margin-top: 10px; 
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    font-size: 15px;
+    font-weight: 200;
+    background-color: #fff;
+  }
+
+  #info p {
+    padding: 0 0px;
+    font-weight: 500;
+    background-color: #fff;
+  }
+  #info p span {
+    font-weight: normal;
+  }
+
+  #flagstela2 {
+     display: block;
+    width: 100%;
+    height: 552px;
+    background-color: #fff;
+    
+  }
+  
+  #flagstela2 img {
+    margin-top: 50px;
+    display: float;
+    width: 20%;
+    height: 20%;
+    border: 1px solid #333;
+    margin-top: 10px; 
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 35px;
+  }
+
+  @media (max-width: 768px) {
+    body { font-size: 12px; }
+    #main { width: 868px;  }  
+    #flagtela2 { height: 272px; }  
+    #info-cont select { font-size: 12px; font-weight: 600; }
+  }
