@@ -63,7 +63,7 @@ listapaises.addEventListener("change", function(event){
 function displayflags(dadosflags){
     flagpaises = dadosflags;
     let img = "";
-    flagpaises.forEach(flag => img +=`<a href="file:///C:/Users/Matheus/Desktop/REST%20COUNTIES%20API/tela2.html?pais=${flag.alpha3Code}"><img src="${flag.flag}" title="${flag.name}"></a>`);
+    flagpaises.forEach(flag => img +=`<a href="https://github.com/matheusmendes84/ProjetoIncluirTecnologia/blob/master/tela2.html?pais=${flag.alpha3Code}"><img src="${flag.flag}" title="${flag.name}"></a>`);
     paisesflag.innerHTML = img;
     console.log(img);
 }
@@ -71,7 +71,7 @@ function displayflags(dadosflags){
 function displayflag(dadosflags){
     console.log(dadosflags);
     flagpaises = dadosflags;
-    let img = `<a href="file:///C:/Users/Matheus/Desktop/REST%20COUNTIES%20API/tela2.html?pais=${flagpaises.alpha3Code}"><img src="${flagpaises.flag}" title="${flagpaises.name}"></a>`;
+    let img = `<a href="https://github.com/matheusmendes84/ProjetoIncluirTecnologia/blob/master/tela2.html?pais=${flagpaises.alpha3Code}"><img src="${flagpaises.flag}" title="${flagpaises.name}"></a>`;
     paisesflag.innerHTML = img;
     console.log(img);
 }
