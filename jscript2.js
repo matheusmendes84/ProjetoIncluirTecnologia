@@ -1,8 +1,9 @@
+//declaração de variáveis
 let infopais;
 let pais;
-const bordersflag = document.getElementById("flagstela2");
-infopais=queryString("pais");
-
+const bordersflag = document.getElementById("flagstela2"); //captura div do HTML
+infopais=queryString("pais"); //localiza parametro passado no métido GET
+//função que retorna o valor selecionado na tela 1
     function queryString(parameter) {  
         var loc = location.search.substring(1, location.search.length);   
         var param_value = false;   
@@ -21,14 +22,14 @@ infopais=queryString("pais");
         }   
     }
     console.log(infopais);
+//busca por meio da API os dados do país escolhido
 fetch(`https://restcountries.eu/rest/v2/alpha/${infopais}`)
 .then(res => res.json())
 .then(data => carregainfo(data))
 .catch(err => console.log("Error:", err));
-
+//função que carrega os dados do pais selecionado
     function carregainfo(dadospais){
-    const nome = dadospais;//.find(country => country.currencies.filter(c => c.code).map(c => `${c.code}`) == nomedopais);
-   // console.log(nome);
+    const nome = dadospais;
     document.querySelector("#flagtela2 img").src = nome.flag;
     document.getElementById("nome").innerHTML = nome.name;
     document.getElementById("capital").innerHTML = `${nome.capital}`;
@@ -38,7 +39,7 @@ fetch(`https://restcountries.eu/rest/v2/alpha/${infopais}`)
     document.getElementById("sub-região").innerHTML = nome.subregion;
     carregavizinhos(dadospais);
     }
-
+//função que carrega as informações(bandeiras) dos países vizinhos
     function carregavizinhos(vizinhospais){
         let paisesvizinhos = vizinhospais.borders.length;//.filter(l => l.borders.length).map(l => `${l.borders.length}`);
         console.log(vizinhospais.borders[0]);
@@ -52,7 +53,7 @@ fetch(`https://restcountries.eu/rest/v2/alpha/${infopais}`)
         bordersflag.innerHTML = img;
        
     }
-
+//função de retorno a tela 1 pelo botão voltar
     document.getElementById("voltar").addEventListener("click", function(event){
         window.history.back()
             });
